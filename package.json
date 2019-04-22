@@ -1,0 +1,21 @@
+{
+  "name": "node-anviz",
+  "description": "Allows quick and easy TCP communication with anviz servers from node.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Diogo Raminhos <diogo@floatingeagle.pt>",
+  "maintainers": [
+    {
+      "name": "Diogo Raminhos",
+      "email": "diogo@floatingeagle.pt",
+      "web": "https://floatingeagle.pt"
+    }
+  ],
+  "dependencies": {
+    "php-pack": "^1.0.2-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WhiteaglePT/node-anviz.git"
+  },
+}
