@@ -11,9 +11,7 @@
       "web": "https://floatingeagle.pt"
     }
   ],
-  "dependencies": {
-    "php-pack": "^1.0.2-release"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/WhiteaglePT/node-anviz.git"
