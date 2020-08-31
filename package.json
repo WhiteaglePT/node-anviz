@@ -1,7 +1,7 @@
 {
   "name": "node-anviz",
   "description": "Allows quick and easy TCP communication with anviz servers from node.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": "Diogo Raminhos <diogo@floatingeagle.pt>",
   "maintainers": [
