@@ -1,7 +1,7 @@
 const Request = require("../lib/request.js"),
 	  fs = require("fs");
 
-let request = new Request("192.168.1.192"), // replace with your device ip
+let request = new Request("10.0.0.6"), // replace with your device ip
 	writeToFile = "records.json"; // will write a JSON array of records to the specified file
 
 function loadRecords(records, op) {
