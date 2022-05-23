@@ -3,9 +3,9 @@ const Request = require("../lib/request.js"),
 
 let request = new Request("10.10.10.8"); // replace with your device ip
 
-request.execute("getServerURL", 1).on("error", function(err) {
-	console.info("ERROR", err);
-}).on("complete", function(res, raw){
+request.execute("getServerURL", 1).then((res, raw) => {
 	console.info(res);
 	request.close();
+}, (err) => {
+	console.info("ERROR", err);
 });

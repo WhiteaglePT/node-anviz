@@ -1,8 +1,9 @@
 # node-anviz
 NPM package to communicate with Anviz devices.
 
-The protocol is not completely implemented, but it's usable.
 The aim of this project is to implement the TC_B Communication Protocol (V2.15) provided by anviz via e-mail on April 2019 (See dev/tcb_communications_protocol2.5.pdf).
+
+The protocol is not completely implemented, but it's usable.
 
 ### Want to contribute? Great!
 I'm accepting PR's if anyone wants to jump in.
@@ -18,13 +19,22 @@ Call a supported method:
 ```js
 const anviz = require("node-anviz");
 let request = new anviz.Request("<device ip>");
-request.execute("getInformation1", 1).on("error", function(err) {
-	console.info("ERROR", err);
-}).on("complete", function(res, raw){
+request.execute("getInformation1", 1).then((res, raw) => {
     console.info(res, raw);
     request.close();
+}, (err) => {
+    console.info("ERROR", err);
 });
 ```
+
+#### Notes
+
+Calling a method returns a Promise.
+
+You should implement your own mutex/sync logic and should only execute one command at a time:
+The library tries to prevent you from doing it but don't really enforce, it should be up to the implementer to assure proper syncing of calls.
+
+I believe the best way to implement this library is to implement it on an async/await fashion, I've included example files async-downloadRecords.js and async-example.js to help illustrate my point.
 
 ### Documentation
 This project has been a bit sidetracked for years, I implement methods as I need them (to use them on my devices & projects).
