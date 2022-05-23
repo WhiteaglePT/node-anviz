@@ -3,7 +3,7 @@ const Request = require("../lib/request.js"),
 
 let request = new Request("10.10.10.8"); // replace with your device ip
 
-request.execute("getInformation1", 1).on("error", function(err) {
+request.execute("getDateTime", 1).on("error", function(err) {
 	console.info("ERROR", err);
 }).on("complete", function(res, raw){
 	console.info(res);

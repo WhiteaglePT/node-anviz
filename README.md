@@ -36,11 +36,11 @@ ID | Method Description | Command | Status | Name | Tested On Device
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
 1 | Get Device Configuration 1	| 0x30 | :white_check_mark: | getInformation1 | :white_check_mark:
 2 | Set Device Configuration 1	| 0x31 | :white_check_mark: | setInformation1 | :red_circle:
-3 | Get Device Configuration 2	| 0x32 | :red_circle: | 
+3 | Get Device Configuration 2	| 0x32 | :white_check_mark: | getInformation2 | :white_check_mark:
 4 | Set Device Configuration 2	| 0x33 | :red_circle: | 
-5 | Get Device Date/Time	| 0x38 | :red_circle: | 
-6 | Set Device Date/Time	| 0x39 | :red_circle: | 
-7 | Get Network Configuration	| 0x3A | :red_circle: | 
+5 | Get Device Date/Time	| 0x38 | :white_check_mark: | getDateTime | :white_check_mark:
+6 | Set Device Date/Time	| 0x39 | :white_check_mark: | setDateTime | :white_check_mark:
+7 | Get Network Configuration	| 0x3A | :white_check_mark: | getNetworkConfiguration | :white_check_mark:
 8 | Set Network Configuration	| 0x3B | :red_circle: | 
 9 | Get Records Info	| 0x3C | :red_circle: | 
 10 | Download T&A Records	| 0x40 | :white_check_mark: | downloadAttendanceRecords | :white_check_mark:
@@ -77,8 +77,8 @@ ID | Method Description | Command | Status | Name | Tested On Device
 41 | Output T&A Records in Real Time	| 0x5F | :red_circle: | 
 42 | Get Customized T&A Statuses	| 0x70 | :red_circle: | 
 43 | Set Customized T&A Statuses	| 0x71 | :red_circle: | 
-44 | Download User Data (Extended	| 0x72 | :red_circle: | 
-45 | Upload User Data(Extended	| 0x73 | :red_circle: | 
+44 | Download User Data Extended	| 0x72 | :red_circle: | 
+45 | Upload User Data Extended	| 0x73 | :red_circle: | 
 46 | Get Communication Device ID	| 0x74 | :red_circle: | 
 47 | Modify Communication Device ID	| 0x75 | :red_circle: | 
 48 | Clear Admin Flag	| 0x3D | :red_circle: | 
@@ -94,8 +94,8 @@ ID | Method Description | Command | Status | Name | Tested On Device
 58 | Set T&A Status Auto Switching Setting	| 0x21 | :red_circle: | 
 59 | Get the Number of Daily Remaining Attempts of a Specified User	| 0x10 | :red_circle: | 
 60 | Set Daily Attempts Number of a Specified User	| 0x10 | :red_circle: | 
-61 | Download User Data(Extended	| 0x22 | :red_circle: | 
-62 | Upload User Data( Extended	| 0x23 | :red_circle: | 
+61 | Download User Data Extended	| 0x22 | :red_circle: | 
+62 | Upload User Data Extended	| 0x23 | :red_circle: | 
 63 | Get Device Serial Number	| 0x24 | :red_circle: | 
 64 | Modify Device Serial Number	| 0x25 | :red_circle: | 
 65 | Get Special State	| 0x2F | :red_circle: | 
@@ -126,7 +126,7 @@ ID | Method Description | Command | Status | Name | Tested On Device
 90 | Heartbeat Package	| 0x7F | :red_circle: | 
 91 | Data Modification Alert	| 0x7D | :red_circle: | 
 92 | Download Personnel Change Records	| 0x64 | :red_circle: | 
-93 | Download User’s Information (Extended	| 0x65 | :red_circle: | 
+93 | Download User’s Information Extended	| 0x65 | :red_circle: | 
 94 | Clear Change of Personnel Records/ Flags	| 0x1E | :red_circle: | 
 95 | Get Device Configuration 3	| 0x34 | :red_circle: | 
 96 | set Device Configuration 3	| 0x35 | :red_circle: | 
@@ -136,7 +136,7 @@ ID | Method Description | Command | Status | Name | Tested On Device
 100 | Delete Department	| 0x62 | :red_circle: | 
 101 | Download a Specified User’s Templates/Images	| 0x66 | :red_circle: | 
 102 | Batch Download Users’ Images	| 0x67 | :red_circle: | 
-103 | Get Result of Last Authentication (Pass/Fail	| 0x79 | :red_circle: | 
+103 | Get Result of Last Authentication Pass/Fail	| 0x79 | :red_circle: | 
 104 | Get Timezone Mode Status	| 0x68 | :red_circle: | 
 105 | Set Timezone Mode Status	| 0x69 | :red_circle: | 
 106 | Upload User’s images	| 0x6D | :red_circle: | 
