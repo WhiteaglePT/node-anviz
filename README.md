@@ -152,8 +152,8 @@ ID | Method Description | Command | Status | Name | Tested On Device
 114 | UDP Start Video	| 0x07 | :red_circle: | 
 115 | UDP Stop Video	| 0x08 | :red_circle: | 
 116 | UDP Command	| 0x09 | :red_circle: | 
-117 | Get Server URL	| 0x0A | :red_circle: | 
-118 | Set Server URL	| 0x0B | :red_circle: | 
+117 | Get Server URL	| 0x0A | :white_check_mark: | getServerURL | :white_check_mark:
+118 | Set Server URL	| 0x0B | :white_check_mark: | setServerURL | :red_circle:
 119 | Test User	| 0x0C | :red_circle: | 
 
 ### License
