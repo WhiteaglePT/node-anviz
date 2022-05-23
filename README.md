@@ -1,10 +1,11 @@
 # node-anviz
 NPM package to communicate with Anviz devices.
 
-## :warning: Work in progress :warning:
+The protocol is not completely implemented, but it's usable.
+The aim of this project is to implement the TC_B Communication Protocol (V2.15) provided by anviz via e-mail on April 2019 (See dev/tcb_communications_protocol2.5.pdf).
 
-This is a work in progress, but it's already functional.
-I managed to find the random document online and I'm currently implementing the TC_B Communications Protocol (2.1) (See dev/tcb_communications_protocol2.1.pdf).
+### Want to contribute? Great!
+I'm accepting PR's if anyone wants to jump in.
 
 ### Usage
 
@@ -26,11 +27,12 @@ request.execute("getInformation1", 1).on("error", function(err) {
 ```
 
 ### Documentation
-This is a work in progress, documentation is on it's way.
-At this time you may check the examples folder.
+This project has been a bit sidetracked for years, I implement methods as I need them (to use them on my devices & projects).
+All implemented methods are documented on the examples folder, with one example per method.
+So if you want to call a method you'll find a valid call there.
 
 ### Methods status:
-##### PLEASE NOTE: There method descriptions were taken out DIRECTLY from the protocol document (check the pdf on the dev/ folder); Do not make me questions about the descriptions, some of them are incomprehensible.
+##### PLEASE NOTE: The method descriptions were taken out DIRECTLY from the protocol document (check the pdf on the dev/ folder); Do not make me questions about the descriptions, some of them are incomprehensible.
 #
 ID | Method Description | Command | Status | Name | Tested On Device
 ------------ | ------------- | ------------- | ------------- | ------------- | -------------
@@ -157,7 +159,3 @@ ID | Method Description | Command | Status | Name | Tested On Device
 ### License
 
 MIT
-
-
-### Want to contribute? Great!
-I'm accepting PR's if anyone wants to jump in.
