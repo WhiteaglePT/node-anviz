@@ -9,4 +9,5 @@ request.execute("uploadRecord", 1, { usercode: user_code, date: new Date() }).on
 	console.info("ERROR", err);
 }).on("complete", function(res, raw){
 	console.info(res);
+	request.close();
 });

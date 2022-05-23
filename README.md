@@ -44,22 +44,22 @@ ID | Method Description | Command | Status | Name | Tested On Device
 6 | Set Device Date/Time	| 0x39 | :white_check_mark: | setDateTime | :white_check_mark:
 7 | Get Network Configuration	| 0x3A | :white_check_mark: | getNetworkConfiguration | :white_check_mark:
 8 | Set Network Configuration	| 0x3B | :red_circle: | 
-9 | Get Records Info	| 0x3C | :red_circle: | 
+9 | Get Records Info	| 0x3C | :white_check_mark: | getRecordInformation | :white_check_mark:
 10 | Download T&A Records	| 0x40 | :white_check_mark: | downloadAttendanceRecords | :white_check_mark:
-11 | Upload T&A Record	| 0x41 | :red_circle: | 
+11 | Upload T&A Record	| 0x41 | :white_check_mark: | uploadRecord | :red_circle:
 12 | Download User's Info	| 0x42 | :red_circle: | 
 13 | Upload User’s Info	| 0x43 | :red_circle: | 
 14 | Download FP Template	| 0x44 | :red_circle: | 
 15 | Upload FP Template	| 0x45 | :red_circle: | 
 16 | Get Device ID	| 0x46 | :red_circle: | 
 17 | Set Device ID	| 0x47 | :red_circle: | 
-18 | Get Device Model code	| 0x48 | :red_circle: | 
+18 | Get Device Model code	| 0x48 | :white_check_mark: | getDeviceModel | :white_check_mark:
 19 | Set Device Model Code	| 0x49 | :red_circle: | 
 20 | Get Manufacture Code	| 0x4A | :red_circle: | 
 21 | Set Manufacture Code	| 0x4B | :red_circle: | 
 22 | Delete Designated User Data	| 0x4C | :red_circle: | 
 23 | Initialize User Profile	| 0x4D | :red_circle: | 
-24 | Erase all Records/ New Records Flag	| 0x4E | :red_circle: | 
+24 | Erase all Records/ New Records Flag	| 0x4E | :white_check_mark: | eraseNewRecordsFlag | :white_check_mark:
 25 | Initialize System	| 0x4F | :red_circle: | 
 26 | Get Timezone	| 0x50 | :red_circle: | 
 27 | Set Timezone	| 0x51 | :red_circle: | 

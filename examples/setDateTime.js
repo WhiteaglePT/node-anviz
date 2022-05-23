@@ -8,4 +8,5 @@ request.execute("setDateTime", 1, new Date()).on("error", function(err) {
 	console.info("ERROR", err);
 }).on("complete", function(res, raw){
 	console.info(res);
+	request.close();
 });

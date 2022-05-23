@@ -7,4 +7,5 @@ request.execute("getRecordInformation", 1).on("error", function(err) {
 	console.info("ERROR", err);
 }).on("complete", function(res, raw){
 	console.info(res);
+	request.close();
 });

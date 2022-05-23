@@ -8,4 +8,5 @@ request.execute("setServerURL", 1, "1.1.1.1", "server-url").on("error", function
 	console.info("ERROR", err);
 }).on("complete", function(res, raw){
 	console.info(res);
+	request.close();
 });
